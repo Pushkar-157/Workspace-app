@@ -1,0 +1,30 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+body { background-color: #ffffff; color: #37352f; }
+.app-layout { display: flex; height: 100vh; }
+.sidebar { width: 250px; background-color: #f7f7f5; border-right: 1px solid #e1e1e0; padding: 20px; display: flex; flex-direction: column; }
+.user-profile { display: flex; flex-direction: column; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #e1e1e0; }
+.user-profile small { color: #787774; margin-top: 4px; }
+.nav-links { display: flex; flex-direction: column; gap: 8px; flex-grow: 1; }
+.nav-links button, .logout-btn { background: none; border: none; text-align: left; padding: 10px 12px; border-radius: 6px; cursor: pointer; color: #37352f; font-size: 14px; }
+.nav-links button:hover, .nav-links button.active { background-color: #e8e8e6; font-weight: 500; }
+.workspace { flex-grow: 1; padding: 50px 80px; overflow-y: auto; }
+.page-content h1 { font-size: 32px; margin-bottom: 24px; }
+.note-editor { display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px; border: 1px solid #e1e1e0; padding: 16px; border-radius: 8px; }
+.note-title-input { font-size: 20px; font-weight: bold; border: none; outline: none; }
+.note-body-input { border: none; outline: none; resize: vertical; font-size: 15px; }
+.note-editor button, .task-form button, .auth-box button { align-self: flex-start; background-color: #2383e2; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+.notes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.note-card { border: 1px solid #e1e1e0; border-radius: 8px; padding: 16px; background: #fafafa; }
+.note-card-header { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.note-card-header button { background: none; border: none; cursor: pointer; }
+.task-form { display: flex; gap: 10px; margin-bottom: 24px; }
+.task-form input { padding: 8px 12px; border: 1px solid #e1e1e0; border-radius: 4px; flex-grow: 1; }
+.task-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #f0f0ef; }
+.task-item.completed span { text-decoration: line-through; color: #9b9a97; }
+.task-item label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.reminder-badge { background-color: #fdecc8; color: #d9730d; font-size: 12px; padding: 3px 8px; border-radius: 4px; margin-right: 10px; }
+.auth-container { display: flex; height: 100vh; justify-content: center; align-items: center; background-color: #f7f7f5; }
+.auth-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); width: 350px; display: flex; flex-direction: column; gap: 15px; }
+.auth-box form { display: flex; flex-direction: column; gap: 12px; }
+.auth-box input { padding: 10px; border: 1px solid #e1e1e0; border-radius: 4px; }
+.toggle-auth { font-size: 13px; color: #2383e2; cursor: pointer; text-align: center; }
